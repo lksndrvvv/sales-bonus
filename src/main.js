@@ -181,10 +181,10 @@ function analyzeSalesData(data, options) {
 // }];
 
 
-// if (typeof module !== "undefined") {
-//   module.exports = {
-//     calculateSimpleRevenue,
-//     calculateBonusByProfit,
-//     analyzeSalesData,
-//   };
-// }
+if (typeof module !== "undefined") {
+  module.exports = {
+    calculateSimpleRevenue,
+    calculateBonusByProfit,
+    analyzeSalesData,
+  };
+}
