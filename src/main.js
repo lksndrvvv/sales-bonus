@@ -50,7 +50,7 @@ function calculateBonusByProfit(index, total, seller) {
  * @returns {{revenue, top_products, bonus, name, sales_count, profit, seller_id}[]}
  */
 function analyzeSalesData(data, options) {
-    
+
   // @TODO: Проверка входных данных
 
   if (
@@ -179,3 +179,12 @@ function analyzeSalesData(data, options) {
 //     ],
 //     bonus: 1234, // Итоговый бонус в рублях, не процент
 // }];
+
+
+if (typeof module !== "undefined") {
+  module.exports = {
+    calculateSimpleRevenue,
+    calculateBonusByProfit,
+    analyzeSalesData,
+  };
+}
